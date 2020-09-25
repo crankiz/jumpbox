@@ -1,0 +1,8 @@
+Come up with a way to manage private key
+	Maybe with en env var on deploy?
+Whiptail or dialog?
+	Could you use whiptail in alpine?
+Implement jumphost script
+Fetch lxc cfg on deploy
+Include ssh config
+
