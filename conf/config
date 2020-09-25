@@ -1,0 +1,52 @@
+Host usg
+  HostName 10.0.0.1
+  IdentityFile ~/.ssh/crankiz.key
+
+Host sw1
+  HostName 10.0.0.2
+  IdentityFile ~/.ssh/crankiz.key
+
+Host sw2
+  HostName 10.0.0.3
+  IdentityFile ~/.ssh/crankiz.key
+
+Host ap
+  HostName 10.0.0.4
+  IdentityFile ~/.ssh/crankiz.key
+
+Host cloudkey
+  HostName 10.0.0.11
+  User root
+  IdentityFile ~/.ssh/crankiz.key
+
+Host proxmox
+  HostName 10.0.0.10
+  User root
+  IdentityFile ~/.ssh/id_ed25519
+
+Host svedberg.tech
+  HostName 10.0.0.21
+  IdentityFile ~/.ssh/crankiz.key
+
+Host dns
+  HostName 10.0.0.53
+  IdentityFile ~/.ssh/crankiz.key
+
+Host viciousrecords.org
+  HostName 10.0.0.22
+  IdentityFile ~/.ssh/crankiz.key
+
+Host proxy
+  HostName 10.0.0.20
+  IdentityFile ~/.ssh/crankiz.key
+
+Host droplet
+  HostName droplet.svedberg.tech
+  User root
+  IdentityFile ~/.ssh/id_ed25519
+
+Host teltonika
+  HostName 10.0.33.1
+  Port 2222
+  User root
+  IdentityFile ~/.ssh/crankiz.key
