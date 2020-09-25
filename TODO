@@ -1,3 +1,11 @@
+
+
+FIX SSH KEY crankiz.key
+	Rename it
+	Change .ssh/config to use globber for keys
+	Perhapse regenerat it
+
+
 Come up with a way to manage private key
 	Maybe with en env var on deploy?
 Whiptail or dialog?

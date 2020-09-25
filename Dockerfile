@@ -9,12 +9,13 @@ EXPOSE 22
 ARG SSH_PRIVATE_KEY
 RUN mkdir -p /root/.ssh
 RUN chmod 700 /root/.ssh
-RUN echo "${SSH_PRIVATE_KEY}" > /root/.ssh/id_ed25519
-RUN chmod 600 /root/.ssh/id_ed25519
-ADD conf/ssh.rc /root/.ssh/rc
+RUN echo "${SSH_PRIVATE_KEY1}" > /root/.ssh/id_ed25519
+RUN echo "${SSH_PRIVATE_KEY2}" > /root/.ssh/crankiz.key
 ADD conf/config /root/.ssh/config
-RUN chmod 600 /root/.ssh/config
+RUN chmod 600 /root/.ssh/*
 RUN chown -Rf root:root /root/.ssh
+
+ADD conf/ssh.rc /root/.ssh/rc
 ADD conf/sshd_config /etc/ssh/sshd_config
 
 # Add scripts
